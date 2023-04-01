@@ -11,10 +11,11 @@ const io = require("socket.io")(server, {
 
 app.use(cors());
 
+
 const PORT = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
-	res.send('Running! Now you can use the UI');
+	res.send('Running! Now you can use the UI of the App');
 });
 
 io.on("connection", (socket) => {
