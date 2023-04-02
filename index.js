@@ -1,6 +1,6 @@
 const app = require("express")();
 const server = require("http").createServer(app);
-const cors = require("cors");
+const cors = require("cors");    //allows cross-origin requests between different domains
 
 const io = require("socket.io")(server, {
 	cors: {
@@ -9,7 +9,7 @@ const io = require("socket.io")(server, {
 	}
 });
 
-app.use(cors());
+app.use(cors());  //CORS middleware to enable cross-origin requests in the Express app
 
 
 const PORT = process.env.PORT || 5000;
