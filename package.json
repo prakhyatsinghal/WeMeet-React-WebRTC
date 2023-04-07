@@ -11,10 +11,12 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"@material-ui/core": "^4.12.4",
 		"cors": "^2.8.5",
 		"express": "^4.17.1",
 		"nodemon": "^2.0.7",
 		"serve": "^14.2.0",
+		"simple-peer": "^9.11.1",
 		"socket.io": "^4.0.0"
 	}
 }
