@@ -5,7 +5,6 @@ import Peer from 'simple-peer';
 const SocketContext = createContext();
 
 const socket = io('http://localhost:5000');
-// const socket = io('https://warm-wildwood-81069.herokuapp.com');
 
 const ContextProvider = ({ children }) => {
   const [callAccepted, setCallAccepted] = useState(false);
@@ -20,11 +19,12 @@ const ContextProvider = ({ children }) => {
   const connectionRef = useRef();
 
   useEffect(() => {
+    // requests access to the user's camera and microphone
     navigator.mediaDevices.getUserMedia({ video: true, audio: true })
       .then((currentStream) => {
         setStream(currentStream);
 
-        myVideo.current.srcObject = currentStream;
+        myVideo.current.srcObject = currentStream; // so that the user's video appears
       });
 
     socket.on('me', (id) => setMe(id));
@@ -35,7 +35,7 @@ const ContextProvider = ({ children }) => {
   }, []);
 
   const answerCall = () => {
-    setCallAccepted(true);
+    setCallAccepted(true); // indicating that the call has been accepted
 
     const peer = new Peer({ initiator: false, trickle: false, stream });
 
