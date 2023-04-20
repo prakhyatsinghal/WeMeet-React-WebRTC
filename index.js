@@ -4,7 +4,7 @@ const cors = require("cors");    //allows cross-origin requests between differen
 
 const io = require("socket.io")(server, {
 	cors: {
-		origin: "*",
+		origin: "*",   //allows access from all origins
 		methods: [ "GET", "POST" ]
 	}
 });
