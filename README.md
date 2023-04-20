@@ -1,6 +1,6 @@
 # Realtime Chat Application
 
-![Video Chat](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mirrorfly.com%2Fblog%2Fwebrtc-video-chat-app-faq%2F&psig=AOvVaw2buaJcVpD9g5ostIzzXo-8&ust=1682098059676000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPDV1-v9uP4CFQAAAAAdAAAAABAE)
+![Video Chat](https://images.unsplash.com/photo-1586985564259-6211deb4c122?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=829&q=80)
 
 ## Introduction
 This is a code repository for the corresponding video tutorial. 
